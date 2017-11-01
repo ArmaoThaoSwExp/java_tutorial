@@ -7,11 +7,39 @@
     <groupId>org.java.tutorial</groupId>
     <artifactId>java_tutorial</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <url>https://www.tbd_placeholder_only_do_not_use.com</url>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.9</maven.compiler.source>
         <maven.compiler.target>1.9</maven.compiler.target>
     </properties>
 
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.9</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>none</id>
+            <url>none</url>
+        </repository>
+    </distributionManagement>
 
 </project>
