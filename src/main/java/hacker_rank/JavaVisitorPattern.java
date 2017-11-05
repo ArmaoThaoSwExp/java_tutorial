@@ -196,7 +196,7 @@ public class JavaVisitorPattern {
             Tree[] tree;
 
             Tree root = null;
-            assert sc.hasNextInt() : "Error: Scanner did not detect any inputs!"
+            assert sc.hasNextInt() : "Error: Scanner did not detect any inputs!";
             totalNodes = sc.nextInt();
 
             /* Create a n row * 2 columns matrix (column 1 = value; column 2 = color) */
@@ -215,7 +215,7 @@ public class JavaVisitorPattern {
 
             /* Grab all colors */
             for (row = 0; row < totalNodes; row++) {
-                assert sc.hasNextInt() : "Error: incomplete user inputs detected while reading each color!"
+                assert sc.hasNextInt() : "Error: incomplete user inputs detected while reading each color!";
                 item = sc.nextInt();
                 treeDetails[row][1] = item;
             }
